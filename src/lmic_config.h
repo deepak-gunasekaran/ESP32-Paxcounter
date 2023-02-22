@@ -1,8 +1,5 @@
 // COUNTRY AND PROJECT SPECIFIC DEFINITIONS FOR LMIC STACK
 
-// workaround for arduino-espressif32 v2.0.0 (see isse #714 @ MCCI_LMIC)
-#define hal_init LMICHAL_init
-
 // COUNTRY SETTINGS
 // --> please check with you local regulations for ISM band frequency use!
 
@@ -46,7 +43,7 @@
 // enable more verbose output. Make sure that printf is actually
 // configured (e.g. on AVR it is not by default), otherwise using it can
 // cause crashing.
-//#define LMIC_DEBUG_LEVEL 1
+//#define LMIC_DEBUG_LEVEL 2
 
 // Enable this to allow using printf() to print to the given serial port
 // (or any other Print object). This can be easy for debugging. The
